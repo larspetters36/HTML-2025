@@ -1,0 +1,108 @@
+.conteudo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo .calculadora {
+  padding: 15px;
+  border: 2px solid black;
+  width: 90%;
+  background: #303030;
+    max-width: 450px;
+  position: flex;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px black;
+}
+
+.conteudo .calculadora .botoes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+
+.conteudo .calculadora .botoes input {
+  grid-column: span 4;
+  height: 60px;
+  width: 180px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 50px;
+  text-align: right;
+  margin: auto;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+#operador {
+    background: #D74747;
+    color: #FFF;
+}
+
+button {
+    background: #FFC4C4;
+    color: #000000;
+    height: 60px;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.botaoResultado {
+    background: #BD0406;
+    width: 90%;
+    max-width: 230px;
+    grid-column: span 2;
+    color: #fff;
+}
+
+#resultado {
+    width: 90%;
+    max-width: 450px;
+    color: #D1D1D1;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+#img {
+    width: 70px;
+    height: 70px;
+    display: block;        
+    margin: 0 auto;      
+    max-width: 100%;       
+    height: auto; 
+}
+
+.apagaTudo {
+  border-radius: 30px;
+  height: 80px;
+}
+
+.botoes2 {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[data-valor="%"],
+button[data-valor="+"] {
+  margin-top: 25px;
+  max-height: 50px;
+}
+
+
+button[data-valor="-"] {
+  margin-top: 25px;
+
+}
+
