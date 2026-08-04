@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 6</title>
+    <script>
+        var maisnovonom = "";
+        var novoidade = Infinity;
+
+        for( var i = 1; i < 11; i++) {
+            var entradanome = prompt("Insira o nome da " + i +"° pessoa.");
+            var entradaidade = prompt("Insira a idade da " + i +"° pessoa.");
+            var idade = parseFloat(entradaidade);
+            if (idade < novoidade) {
+                novoidade = idade;
+                maisnovonom = entradanome;
+            }
+        }
+        document.write("A pessoa mais nova é a " +maisnovanom+ ".")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

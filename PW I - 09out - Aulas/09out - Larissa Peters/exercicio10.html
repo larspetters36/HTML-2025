@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+    <script>
+        var qtdCasas = parseInt(prompt("Digite a quantidade de casas participantes da pesquisa:"));
+
+        var canais = [3, 5, 8, 11, 13];
+        var audiencia = {
+            3: 0,
+            5: 0,
+            8: 0,
+            11: 0,
+            13: 0
+        };
+
+        var totalPessoas = 0;
+
+        for (var i = 1; i <= qtdCasas; i++) {
+            var canal = parseInt(prompt("Casa " + i + ": Digite o canal assistido (3, 5, 8, 11 ou 13):"));
+            var pessoas = parseInt(prompt("Casa " + i + ": Quantas pessoas estavam assistindo o canal " + canal + "?"));
+
+            if (canais.includes(canal)) {
+                audiencia[canal] += pessoas;
+                totalPessoas += pessoas;
+            } else {
+                alert("Canal inválido! Essa casa não será contabilizada.");
+            }
+        }
+
+        document.write("Resultado da pesquisa de audiência:");
+        document.write(" <br> ")
+        for (var canal of canais) {
+            var porcentagem = (audiencia[canal] / totalPessoas) * 100;
+            document.write("Canal" + canal + ":" + porcentagem.toFixed(2) + "% de audiência");
+            document.write(" <br> ")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

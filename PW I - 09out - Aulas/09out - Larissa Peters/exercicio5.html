@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 5</title>
+    <script> 
+    for( var i = 1; i < 11; i++) {
+        var entradaidade = prompt("Insira a idade da " + i +" pessoa.");
+        var idade = parseFloat(entradaidade);
+        if ( idade < 18 ) {
+            document.write("A pessoa n°" +i + " é menor de idade.")
+            document.write("<br>");
+        } 
+        else if( idade >= 18) {
+            document.write("A pessoa n°" +i+ " é maior de idade.")
+            document.write("<br>");
+        }
+        else {
+            document.write("A idade dessa pessoa não é valida.")
+            document.write("<br>");
+        }
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
